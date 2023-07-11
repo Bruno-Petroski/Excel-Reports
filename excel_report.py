@@ -48,7 +48,7 @@ Alfabeto = list(string.ascii_uppercase)
 Alfabeto_Excel = Alfabeto[0:MaxColuna]
 
 for i in Alfabeto_Excel:
-    if i != 'A':
+    if i != 'A' and i != 'B':
         for cell in range(5, ws.max_row+1):
             ws[f'{i}{cell}'].style = 'Currency'
 
